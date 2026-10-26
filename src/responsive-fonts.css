@@ -1,0 +1,7 @@
+/* Local Latin fonts used by the responsive layouts. */
+@import '@fontsource/abril-fatface/latin-400.css';
+@import '@fontsource/noto-serif/latin-400.css';
+@import '@fontsource/noto-serif/latin-700.css';
+@import '@fontsource/noto-serif/latin-400-italic.css';
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-500.css';

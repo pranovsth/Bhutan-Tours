@@ -1,0 +1,162 @@
+.responsive-site{--red:#8e0000;--pale:#efebe9;font-family:'Noto Serif',Georgia,serif;color:#111;background:#fff;line-height:1.65;overflow:clip}
+.responsive-site h1,.responsive-site h2,.responsive-site h3,.responsive-site p,.responsive-site figure{margin:0}
+.responsive-site h2,.responsive-site h3{line-height:1.15;text-wrap:balance}
+.responsive-site h2{font-family:'Abril Fatface',Georgia,serif;font-size:clamp(29px,4.3vw,40px);font-weight:400;margin-bottom:25px}
+.responsive-site h3{font-size:20px}
+.responsive-site p{font-size:15px;line-height:1.8;margin-bottom:20px;overflow-wrap:break-word}
+.responsive-site img{display:block;max-width:100%}
+.responsive-site button{font:inherit;cursor:pointer;touch-action:manipulation;color:inherit}
+.responsive-site button:focus-visible,.responsive-site a:focus-visible,.responsive-site input:focus-visible,.holiday-list:focus-visible{outline:2px solid #b47842;outline-offset:4px}
+.responsive-site svg{flex:none}
+.responsive-container{width:calc(100% - 64px);max-width:920px;margin-inline:auto;min-width:0}
+.responsive-section{padding-block:72px}
+.responsive-header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 3px 20px #0002}
+.header-bar{min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.responsive-brand{width:200px;height:auto;object-fit:contain;flex-shrink:1}
+.header-actions{display:flex;align-items:center;gap:12px}
+.contact-shortcut,.menu-toggle{border:0;background:none;display:flex;align-items:center;justify-content:center;gap:10px;min-width:44px;min-height:44px;padding:8px}
+.contact-shortcut{color:var(--red)!important;font-size:13px!important;white-space:nowrap}
+.menu-toggle{border:1px solid #e5d8d1;border-radius:50%;color:var(--red)!important}
+.mobile-navigation{position:absolute;left:0;right:0;top:100%;background:#fff;box-shadow:0 18px 20px #0002;max-height:calc(100dvh - 90px);overflow-y:auto;border-top:1px solid #eee}
+.mobile-navigation>.responsive-container{display:grid;grid-template-columns:1fr 1fr;padding-block:18px;gap:0 35px}
+.mobile-navigation button{display:flex;justify-content:space-between;align-items:center;gap:15px;border:0;border-bottom:1px solid #eee;background:none;text-align:left;padding:16px 0;font-size:14px;min-height:50px}
+.responsive-hero{background:#13110e;color:#fff}
+.hero-cover{height:560px;position:relative;overflow:hidden;isolation:isolate}
+.hero-cover .hero-backdrop,.hero-cover .hero-foreground{position:absolute;left:50%;top:0;transform:translateX(-50%);height:100%;width:calc(560px * 1600 / 810);min-width:100%}
+.hero-cover .hero-backdrop{z-index:-3}
+.hero-cover .hero-foreground{z-index:1;pointer-events:none}
+.hero-cover-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#13110e 0%,transparent 45%),linear-gradient(0deg,#0003,transparent 70%)}
+.responsive-hero-copy{position:relative;text-align:center;padding-top:80px}
+.responsive-hero h1{font:700 clamp(60px,16.7vw,146px)/1.05 'Inter',sans-serif;letter-spacing:-.055em;text-shadow:0 4px 22px #0005;margin:0;white-space:nowrap}
+.responsive-hero-copy p{font-size:18px;font-weight:700;line-height:1.5;text-shadow:0 1px 3px #0007;margin:0 auto 18px;max-width:360px;text-wrap:balance}
+.holiday-section{position:relative;padding:0 0 35px;margin-top:-44px}
+.holiday-section h2{font-size:23px;margin-bottom:20px}
+.holiday-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#ffffff60 transparent;padding-bottom:16px;overscroll-behavior-inline:contain}
+.holiday-card{scroll-snap-align:start;display:grid;grid-template-columns:clamp(78px,10vw,102px) minmax(0,1fr);background:#fff;border-radius:10px;overflow:hidden;color:#111;min-height:132px}
+.holiday-card>img{width:100%;height:100%;object-fit:cover}
+.holiday-card>div{padding:15px 12px;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.holiday-card h3{font-size:14px;line-height:1.4;margin-bottom:12px}
+.holiday-card-description{display:none}
+.holiday-card h3 button,.featured-card h3 button{border:0;background:none;padding:0;text-align:left;color:var(--red);font-weight:700}
+.holiday-meta{display:flex;justify-content:space-between;gap:7px;border-top:1px solid #aaa;padding-top:9px;font-size:11px;white-space:nowrap}
+.holiday-more{display:flex;align-items:center;gap:10px;margin-left:auto;margin-top:8px;border:0;background:none;padding:8px 0;font-size:14px!important;font-weight:700!important;min-height:44px}
+.holiday-bottom-row{display:flex;align-items:center;justify-content:flex-end}
+.holiday-pagination{display:none}
+.responsive-intro{display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,1.2fr);gap:35px;align-items:start}
+.responsive-intro-copy .intro-greeting{font-weight:700;color:var(--red)}
+.source-composition{position:relative;min-width:0;width:100%;overflow:hidden}
+.composition-scale{position:absolute;top:0;left:0;transform-origin:0 0}
+.composition-offset{position:absolute;left:0;top:0;width:1600px;height:6406px;transform-origin:0 0}
+.source-composition img{max-width:none}
+.intro-composition{align-self:center}
+.responsive-button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:150px;border:1px solid var(--red);border-radius:30px;background:var(--red);color:#fff!important;padding:12px 25px;font-size:14px!important;font-weight:700!important;line-height:1.4;margin-top:8px}
+.responsive-button.outline{background:transparent;border-color:#ffffffa0;color:#fff!important}
+.responsive-trust{background:var(--pale);border-radius:14px 14px 0 0;padding-block:50px}
+.trust-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.trust-list article{display:flex;gap:13px;min-width:0}
+.trust-symbol{font-size:21px;color:var(--red);line-height:1.2}
+.trust-list h3{font:400 21px/1.25 'Abril Fatface',Georgia,serif;margin-bottom:20px}
+.trust-list p{font-size:14px;margin:0}
+.responsive-red{background:var(--red);color:#fff;text-align:center}
+.responsive-featured h2{max-width:700px;margin-inline:auto;margin-bottom:36px}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;text-align:left;margin-bottom:30px}
+.featured-card{background:#fff;border-radius:10px;overflow:hidden;color:#111;display:flex;flex-direction:column;min-width:0}
+.featured-card>img{width:100%;height:auto;aspect-ratio:1.65;object-fit:cover}
+.featured-copy{padding:20px;flex:1;display:flex;flex-direction:column;min-width:0}
+.featured-card h3{font-size:18px;line-height:1.3;margin-bottom:16px}
+.featured-card p{font-size:14px;line-height:1.7;margin-bottom:24px}
+.featured-meta{margin-top:auto;border-top:1px solid #ddd;padding-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px}
+.featured-meta>div{display:flex;flex-direction:column;gap:4px}
+.featured-meta b{font-weight:400}.featured-meta>div>span{color:#555}
+.rating{color:#d9b000;letter-spacing:1px}.rating>span{color:#d0d0d0}
+.responsive-why{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.responsive-why .why-composition{grid-column:2;grid-row:1;margin-top:40px}
+.responsive-why-copy{grid-column:1;grid-row:1}
+.responsive-benefits{display:grid;gap:25px;padding-bottom:72px}
+.responsive-benefits article{display:grid;grid-template-columns:64px 1fr;gap:24px;background:var(--pale);border-radius:15px;padding:32px}
+.benefit-icon{max-width:64px;align-self:start;margin-top:4px}
+.responsive-benefits h3{font:400 23px/1.2 'Abril Fatface',Georgia,serif;margin-bottom:20px}
+.benefit-copy{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.benefit-copy p{font-size:14px;margin:0}
+.responsive-testimonials h2{margin-bottom:36px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:center;margin-bottom:30px}
+.testimonial-grid figure{background:#fff;border-radius:9px;color:#111;padding:30px 22px;min-height:315px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.testimonial-grid figure:nth-child(2){min-height:350px}
+.quote-mark{font:70px/.7 Georgia,serif;align-self:flex-start;color:var(--red)}
+.testimonial-grid blockquote{font-style:italic;font-size:16px;margin:20px 0;line-height:1.65}
+.review-stars{font-size:22px;color:var(--red);letter-spacing:2px;white-space:nowrap}
+.testimonial-grid figcaption{font:400 18px/1.25 'Abril Fatface',Georgia,serif;margin-top:16px}
+.responsive-information{display:grid;grid-template-columns:minmax(230px,.75fr) minmax(0,1.25fr);gap:32px;align-items:start}
+.information-photo{width:100%;height:auto;max-height:560px;object-fit:cover;border-radius:9px}
+.culture-information h3{color:var(--red);font-size:19px;line-height:1.4;margin-bottom:18px}
+.culture-copy{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.culture-copy p{font-size:14px;margin:0}
+.information-links{margin-top:20px}
+.information-links button{display:flex;justify-content:space-between;align-items:center;gap:18px;width:100%;border:0;border-bottom:1px solid #ddd;background:none;text-align:left;padding:18px 0;font-weight:700;font-size:15px;min-height:56px}
+.responsive-flags{overflow:hidden;padding:0 0 25px}
+.responsive-flags img{display:block;width:106%;max-width:none;height:auto;margin-left:-3%}
+.responsive-footer{background:var(--red);color:#fff;font-family:'Inter',Arial,sans-serif;padding-block:58px 30px}
+.footer-content{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:40px 30px}
+.responsive-footer h2{font-size:27px;white-space:pre-line;margin-bottom:23px}
+.responsive-footer h3{font-family:'Inter',Arial,sans-serif;font-weight:500;font-size:16px;margin-bottom:20px}
+.responsive-footer p{font-size:14px;margin-bottom:16px;line-height:1.7}
+.responsive-footer nav{display:grid;justify-items:start}
+.responsive-footer nav button{border:0;background:none;padding:7px 0;text-align:left;font-size:14px;min-height:38px}
+.footer-contact p{display:flex;align-items:center;gap:10px;white-space:pre-line;overflow-wrap:anywhere}
+.footer-social{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:0 35px}
+.footer-social h3{grid-column:1}
+.social-links{display:flex;gap:12px;grid-column:1}
+.social-links button{border:1px solid #ffffff80;border-radius:50%;height:44px;width:44px;background:transparent;color:#fff;display:grid;place-items:center;padding:11px}
+.footer-social form{grid-column:2;grid-row:1/3}
+.footer-social label{display:block;font-size:16px;font-weight:500;margin-bottom:20px}
+.responsive-newsletter{display:flex;min-width:0;border:1px solid #ffffff80;min-height:48px}
+.responsive-newsletter input{width:100%;min-width:0;background:transparent;color:#fff;border:0;padding:12px 15px;font:14px 'Inter',Arial,sans-serif;outline:none}
+.responsive-newsletter input::placeholder{color:#ffffffc0}
+.responsive-newsletter button{background:#fff;color:var(--red);border:0;display:grid;place-items:center;min-width:48px}
+.responsive-registration{grid-column:1/-1;border-top:1px solid #ffffff40;padding-top:24px;margin:0;display:flex;gap:35px;color:#ffffffb8;font-size:11px}
+.responsive-registration dt{margin-bottom:5px}.responsive-registration dd{margin:0}
+.responsive-loading{min-height:100dvh;background:#fff}
+@media(max-width:849px){.responsive-container{width:calc(100% - 48px)}.responsive-intro{grid-template-columns:1fr}.intro-composition{width:min(100%,390px);margin-inline:auto}.responsive-intro-copy{max-width:650px;margin:auto}.trust-list{gap:22px}.trust-list article{display:block}.trust-symbol{display:block;margin-bottom:12px}.trust-list h3{font-size:20px}.featured-grid{gap:15px}.featured-copy{padding:18px}.featured-card h3{font-size:17px}.featured-meta{gap:10px}.responsive-why{gap:20px}.culture-copy{grid-template-columns:1fr}.testimonial-grid{gap:15px}.testimonial-grid figure{padding:27px 17px}.testimonial-grid blockquote{font-size:15px}.responsive-information{grid-template-columns:.75fr 1.25fr}}
+@media(max-width:699px){.responsive-section{padding-block:58px}.header-bar{min-height:78px}.responsive-brand{width:175px}.contact-shortcut span{display:none}.contact-shortcut{border-radius:50%;background:#f4eeea}.header-actions{gap:8px}.hero-cover{height:475px}.responsive-hero-copy{padding-top:80px}.responsive-hero-copy p{font-size:16px;max-width:270px;margin-top:28px}.responsive-hero-photo{object-position:52% 45%}.cloud-left{width:210%;left:-95%;top:-15%}.cloud-right{width:170%;right:-70%;top:-15%}.holiday-section{margin-top:-35px;padding-bottom:25px}.holiday-section h2{font-size:21px}.holiday-list{grid-template-columns:repeat(3,minmax(282px,1fr));gap:16px}.holiday-card{grid-template-columns:108px minmax(0,1fr);min-height:132px}.holiday-card h3{font-size:15px}.holiday-card>div{padding:15px}.holiday-meta{font-size:12px}.trust-list{grid-template-columns:1fr;gap:30px}.trust-list article{display:flex;gap:15px}.trust-list h3{font-size:23px;margin-bottom:13px}.trust-symbol{margin-bottom:0}.responsive-trust{padding-block:42px}.featured-grid{grid-template-columns:1fr;gap:25px;max-width:440px;margin-inline:auto}.featured-copy{padding:23px}.featured-card h3{font-size:22px}.featured-card p{font-size:15px}.featured-meta{font-size:13px;flex-wrap:nowrap}.responsive-why{grid-template-columns:1fr;gap:20px}.responsive-why .why-composition{width:min(100%,430px);margin:0 auto}.responsive-benefits article{padding:26px;grid-template-columns:1fr;gap:20px}.benefit-icon{width:56px}.benefit-copy{grid-template-columns:1fr;gap:16px}.responsive-benefits{padding-bottom:58px}.testimonial-grid{grid-template-columns:1fr;max-width:440px;margin-inline:auto;gap:22px}.testimonial-grid figure,.testimonial-grid figure:nth-child(2){min-height:280px;padding:32px}.testimonial-grid blockquote{font-size:18px;margin:20px 0}.testimonial-grid figcaption{font-size:20px}.responsive-information{grid-template-columns:1fr;gap:32px}.information-photo{max-width:440px;max-height:480px;margin-inline:auto;aspect-ratio:.85;object-position:center 25%}.culture-copy{grid-template-columns:1fr;gap:18px}.responsive-flags{padding-bottom:25px}.responsive-flags img{width:150%;margin-left:-25%}.footer-content{grid-template-columns:1fr 1fr;gap:32px 22px}.footer-about{grid-column:1/-1;max-width:440px}.footer-social{grid-template-columns:1fr;gap:0}.footer-social form{grid-column:1;grid-row:auto;margin-top:30px}.responsive-registration{flex-wrap:wrap;gap:20px 25px}.mobile-navigation>.responsive-container{grid-template-columns:1fr}.mobile-navigation{max-height:calc(100dvh - 78px)}}
+@media(max-width:359px){.responsive-container{width:calc(100% - 36px)}.responsive-brand{width:153px}.header-actions{gap:3px}.contact-shortcut{display:none}.responsive-hero h1{font-size:55px}.hero-cover{height:440px}.holiday-list{grid-template-columns:repeat(3,minmax(270px,1fr))}.holiday-card{grid-template-columns:95px minmax(0,1fr)}.footer-content{grid-template-columns:1fr}.footer-about,.footer-social{grid-column:1}.responsive-registration{display:grid}.responsive-site h2{font-size:29px}}
+@media(prefers-reduced-motion:reduce){.responsive-site *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(max-width:699px){
+  .hero-cover{--hero-mobile-height:clamp(430px,100vw,475px);height:var(--hero-mobile-height)}
+  .hero-cover .hero-backdrop,.hero-cover .hero-foreground{width:calc(var(--hero-mobile-height) * 1600 / 810)}
+  .hero-backdrop [data-node-id="3:292"]{opacity:.56}
+  .hero-backdrop [data-node-id="3:293"],.hero-backdrop [data-node-id="3:294"],.hero-backdrop [data-node-id="3:295"]{opacity:.67}
+  .responsive-hero-copy{height:100%;padding-top:45px}
+  .responsive-hero-copy p{margin:0 auto 18px;text-shadow:0 2px 5px #0009}
+  .responsive-hero h1{font-size:clamp(54px,15.4vw,112px)}
+  .holiday-section{margin-top:-28px}
+  .holiday-list{grid-template-columns:repeat(3,100%);grid-auto-rows:144px;gap:0;scrollbar-width:none;padding-bottom:0}
+  .holiday-list::-webkit-scrollbar{display:none}
+  .holiday-card{display:flex;height:100%;min-height:0}
+  .holiday-card>img{flex:none;width:clamp(108px,32%,155px);height:100%}
+  .holiday-card>div{flex:1}
+  .holiday-bottom-row{justify-content:space-between;gap:12px;margin-top:8px}
+  .holiday-more{margin-top:0}
+  .holiday-pagination{display:flex;align-items:center;gap:2px}
+  .holiday-pagination button{display:grid;place-items:center;width:31px;height:40px;min-width:31px;border:0;background:none;padding:0;color:#fff}
+  .holiday-pagination button::after{content:'';display:block;width:7px;height:7px;border-radius:99px;background:#ffffff70;transition:width .25s ease,background .25s ease}
+  .holiday-pagination button[aria-current=true]::after{width:22px;background:#fff}
+  .responsive-why .why-composition,.responsive-why-copy{grid-column:1;grid-row:auto}
+}
+@media(min-width:480px) and (max-width:699px){
+  .responsive-hero-copy p{max-width:100%}
+}
+@media(min-width:390px) and (max-width:699px){
+  .holiday-card>div{justify-content:flex-start}
+  .holiday-card h3{margin-bottom:5px}
+  .responsive-site .holiday-card-description{display:block;margin:0;color:#665b55;font-size:12px;line-height:1.4}
+  .holiday-meta{margin-top:auto}
+}
+@media(min-width:700px) and (max-width:849px){
+  .hero-cover{--hero-tablet-height:clamp(475px,calc(57vw + 76px),560px);height:var(--hero-tablet-height)}
+  .hero-cover .hero-backdrop,.hero-cover .hero-foreground{width:calc(var(--hero-tablet-height) * 1600 / 810)}
+  .hero-backdrop [data-node-id="3:292"],.hero-backdrop [data-node-id="3:293"],.hero-backdrop [data-node-id="3:294"],.hero-backdrop [data-node-id="3:295"]{opacity:.8}
+}
+@media(max-width:359px){
+  .holiday-section h2{font-size:19px;white-space:nowrap}
+  .holiday-list{grid-template-columns:repeat(3,100%)}
+}

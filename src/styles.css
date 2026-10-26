@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+html,body,#root{margin:0;min-height:100%;width:100%}
+body{background:#fff;overflow-x:hidden}
+button,input{font:inherit}
+.prototype{width:100%;background:#fff}
+.prototype-viewport{position:relative;margin:0 auto;overflow:hidden}
+.design-stage{position:absolute;left:0;top:0;transform-origin:0 0;overflow:hidden;background:#fff;isolation:isolate}
+.design-layer{position:absolute;left:0;top:0;transform-origin:0 0;margin:0;padding:0;border:0;background:none;text-align:initial;color:inherit;font:inherit;vertical-align:top}
+.design-layer[data-replaced="true"]{visibility:hidden}
+.layer-content{position:relative;width:100%;height:100%;transform-origin:50% 50%}
+.scroll-reveal-active{transition:none!important}
+.source-art{display:block;position:absolute;inset:0;max-width:none;user-select:none;pointer-events:none}
+.demo-contact-art{position:absolute;left:0;top:0;display:block;width:max-content;white-space:pre-line;pointer-events:none}
+.image-mask{position:absolute;inset:0;overflow:hidden}
+.source-image{position:absolute;left:0;top:0;display:block;max-width:none;transform-origin:0 0;user-select:none;pointer-events:none}
+.accessible-copy{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:pre-wrap}
+.dummy-control{cursor:pointer;appearance:none;-webkit-tap-highlight-color:transparent}
+.dummy-control:focus-visible{outline:2px solid #b47842;outline-offset:5px;border-radius:5px;z-index:2}
+.hero-depth{position:absolute;left:0;top:0;transform-origin:0 0;pointer-events:none;opacity:0;z-index:1}
+.hero-depth canvas{display:block;width:100%!important;height:100%!important}
+.desktop-hero-tagline{position:absolute;left:600px;top:185px;width:398px;height:27px;margin:0;filter:drop-shadow(0 1px 2px #0006);pointer-events:none}
+.email-demo{position:absolute;left:1169px;top:6256px;width:208px;height:38px;display:flex;margin:0;z-index:2}
+.email-demo input{border:0;width:170px;height:38px;padding:0 20px;background:transparent;color:transparent;font:12px Inter,Arial,sans-serif;outline:none}
+.email-demo input::placeholder{color:transparent}
+.email-demo input:focus,.email-demo.has-value input{background:#8e0000;color:#fff}
+.email-demo input:focus::placeholder{color:#fff}
+.email-demo input:focus-visible{outline:1px solid #fff;outline-offset:-2px}
+.email-demo button{width:38px;height:38px;background:transparent;border:0;cursor:pointer}
+.email-demo button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.hero-depth{display:none}}

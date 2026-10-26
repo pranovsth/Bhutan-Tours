@@ -1,0 +1,6 @@
+.prayer-flag-divider{position:relative;isolation:isolate;height:36vw;overflow:hidden;background:#fff}
+.prayer-flag-divider .prayer-flag-art{position:absolute;display:block;width:100%;max-width:none;height:auto;left:0;top:-2vw;transform-origin:50% 4%;user-select:none;pointer-events:none}
+.responsive-site .prayer-flag-divider .prayer-flag-art{max-width:none}
+.prayer-flag-divider-desktop{width:1600px;height:576px}
+.prayer-flag-divider-desktop .prayer-flag-art{top:-32px}
+.desktop-prayer-divider{position:absolute;left:0;top:5200px;width:1600px;height:576px;z-index:2}
