@@ -64,7 +64,10 @@ function DesktopExperience(){
   useScrollReveals(stage,true);
   const [scale,setScale]=useState(()=>Math.min(1,document.documentElement.clientWidth/design.w));
   const [email,setEmail]=useState('');
-  const [footerShift,setFooterShift]=useState(1276);
+  const [travelShift,setTravelShift]=useState(1276);
+  const [infoHeight,setInfoHeight]=useState(460);
+  const infoExpansion=Math.max(0,infoHeight-460);
+  const footerShift=travelShift+infoExpansion;
   useLayoutEffect(()=>{
     const observer=new ResizeObserver(([entry])=>setScale(Math.min(1,entry.contentRect.width/design.w)));
     observer.observe(host.current);return()=>observer.disconnect();
@@ -72,7 +75,7 @@ function DesktopExperience(){
   useLayoutEffect(()=>{
     // The tighter testimonial section moves all following sections up 279px.
     // The original footer starts at 6030; travel content starts at 5776.
-    const observer=new ResizeObserver(([entry])=>setFooterShift(Math.ceil(entry.contentRect.height)+25-279));
+    const observer=new ResizeObserver(([entry])=>setTravelShift(Math.ceil(entry.contentRect.height)+25-279));
     observer.observe(extension.current);return()=>observer.disconnect();
   },[]);
   return <main className="prototype" ref={host} aria-label="Bhutan Tours & Trek Operator">
@@ -89,9 +92,9 @@ function DesktopExperience(){
         <div className="desktop-feature-extension"><FeaturedShowcase desktop/></div>
         <div className="desktop-journey-extension"><JourneyInsights desktop/></div>
         <div className="desktop-testimonial-extension"><TestimonialsShowcase desktop/></div>
-        <div className="desktop-info-extension"><TourInformation desktop/></div>
-        <div className="desktop-prayer-divider"><PrayerFlagDivider desktop/></div>
-        <div className="desktop-travel-extension" ref={extension}><TravelSections/></div>
+        <div className="desktop-info-extension"><TourInformation desktop onHeightChange={setInfoHeight}/></div>
+        <div className="desktop-prayer-divider" style={{top:5200+infoExpansion}}><PrayerFlagDivider desktop/></div>
+        <div className="desktop-travel-extension" style={{top:5776+infoExpansion}} ref={extension}><TravelSections/></div>
         <form className={`email-demo ${email?'has-value':''}`} style={{top:6256+footerShift}} onSubmit={e=>e.preventDefault()} aria-label="Newsletter demonstration">
           <input type="email" aria-label="Enter your e-mail" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Enter your e-mail"/>
           <button type="submit" aria-label="Subscribe to email alerts"/>
